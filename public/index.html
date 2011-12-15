@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html manifest="/application.manifest">
+  <head>
+    <title>Online</title>
+    
+    <script type="text/javascript">
+      function cacheOffline(e) {
+        var offlineURL = '/offline.html';
+        window.location = offlineURL;
+      }
+
+      window.applicationCache.addEventListener('error', cacheOffline, false);
+    </script>
+  </head>
+  <body>
+    <h1>Hello, you're online!</h1>
+    <p>To test offline mode, turn off your webserver and reload this page.</p>
+  </body>
+</html>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Offline</title>
+    
+    <script type="text/javascript">
+      function returnToIndex(e) {
+        var indexURL = '/';
+        window.location = indexURL;
+      }
+
+      window.applicationCache.addEventListener('noupdate', returnToIndex, false);
+      window.applicationCache.addEventListener('updateready', returnToIndex, false);
+    </script>
+  </head>
+  <body>
+    <h1>Oh no, you're Offline!</h1>
+  </body>
+</html>
+

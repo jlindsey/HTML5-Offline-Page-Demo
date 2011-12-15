@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#v3.1
+
+CACHE:
+/index.html
+/offline.html
+
+NETWORK:
+/
+
+FALLBACK:
+/ /offline.html
